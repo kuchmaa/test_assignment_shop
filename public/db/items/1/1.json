@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "title": "Phuket Fruit Tray",
+      "image": "db/items/1/phuket_fruit_tray.png",
+      "tag": "Fruit trays",
+      "tagColor": "red",
+      "price": {
+        "type": "swap",
+        "amount": ["229.00", "340.00"]
+      },
+      "productPage": "/"
+    },
+    {
+      "title": "MLXL Basket \"Seychelles\"",
+      "image": "db/items/1/mlxl_basket_seychelles.png",
+      "tag": "Fruit baskets",
+      "tagColor": "green",
+      "price": {
+        "type": "fixed",
+        "amount": "269.00"
+      },
+      "productPage": "/"
+    },
+    {
+      "title": "Every day a holiday of love",
+      "image": "db/items/1/every_day_a_holiday_of_love.png",
+      "tag": "Fruit trays",
+      "tagColor": "red",
+      "price": {
+        "type": "fixed",
+        "amount": "238.00"
+      },
+      "productPage": "/"
+    },
+    {
+      "title": "Sushi Fruit Delicacy Heaven",
+      "image": "db/items/1/sushi_fruit_delicacy_heaven.png",
+      "tag": "Fruit sushi",
+      "tagColor": "black",
+      "price": {
+        "type": "fixed",
+        "amount": "170.00"
+      },
+      "productPage": "/"
+    },
+    {
+      "title": "Fruit delicacy sushi",
+      "image": "db/items/1/fruit_delicacy_sushi.png",
+      "tag": "Fruit sushi",
+      "tagColor": "black",
+      "price": {
+        "type": "fixed",
+        "amount": "69.00"
+      },
+      "productPage": "/"
+    },
+    {
+      "title": "Classic tray \"Tenerife\"",
+      "image": "db/items/1/classic_tray_tenerife.png",
+      "tag": "Fruit trays",
+      "tagColor": "red",
+      "price": {
+        "type": "swap",
+        "amount": ["395.00", "189.00"]
+      },
+      "productPage": "/"
+    },
+    {
+      "title": "Zanzibar-on box-XL",
+      "image": "db/items/1/zanzibar-on_box-XL.png",
+      "tag": "Fruit basket",
+      "tagColor": "green",
+      "price": {
+        "type": "swap",
+        "amount": ["419.00", "288.00"]
+      },
+      "productPage": "/"
+    },
+    {
+      "title": "Kopenhagen fruit tray",
+      "image": "db/items/1/kopenhagen_fruit_tray.png",
+      "tag": "Fruit trays",
+      "tagColor": "red",
+      "price": {
+        "type": "fixed",
+        "amount": "249.00"
+      },
+      "productPage": "/"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+#cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+#cards h2 {
+  color: var(--black);
+  margin: 0;
+}
+.cards__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+.card {
+  background-color: white;
+  padding: 10px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  width: 254px;
+  gap: 10px;
+}
+.card__body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card__body__img {
+  border: 1px solid rgba(231, 231, 231, 1);
+  margin-bottom: 25px;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.card__body__title {
+  font-family: 'Varela Round';
+  box-sizing: border-box;
+  color: var(--black);
+  margin: 0;
+  font-size: 17px;
+  margin-bottom: 13px;
+}
+.card__price {
+  box-sizing: border-box;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-family: 'Rubik';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--bg-red);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.card__price--dollar {
+  font-weight: 400;
+  margin-right: 4px;
+  color: var(--green);
+}
+.card__price--svg {
+  content: url('data:image/svg+xml,<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.50098 9.05762L10.9645 9.05762" stroke="%23B5B5B5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.04981 9.05762L16.5133 9.05762" stroke="%23B5B5B5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.575 12.1169C4.575 12.1169 1.5 10.4902 1.5 9.05844C1.5 7.62744 4.575 5.99994 4.575 5.99994" stroke="%23B5B5B5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 6.04194C13.5 6.04194 16.575 7.66944 16.575 9.10044C16.575 10.5314 13.5 12.1589 13.5 12.1589" stroke="%23B5B5B5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+.card__body__footer {
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.card__footer__button {
+  font-family: 'Varela Round';
+  width: 104px;
+  height: 40px;
+  border-radius: 50px;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  --cart-icon-top: 2px;
+  --cart-icon-size-x: 18px;
+  --cart-icon-size-y: 18px;
+}
+.card__tag--wrapper {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  font-family: 'Varela Round';
+  font-size: 11px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+.card__tag {
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border: 1px solid var(--color, black);
+  color: var(--color, black);
+}
+.card__tag--red {
+  --color: var(--bg-red);
+}
+.card__tag--green {
+  --color: var(--green);
+}
+.card__tag--black {
+  --color: var(--black);
+}
+.card__footer__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  color: var(--bg-red);
+}

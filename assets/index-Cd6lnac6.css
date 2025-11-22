@@ -74,7 +74,7 @@ main {
 .section__hero {
   position: relative;
   height: 100vh;
-  background-image: url(./img/background.png);
+  background-image: url(/test_assignment_shop/img/background.png);
   background-size: cover;
   background-position: center;
 }
@@ -108,7 +108,7 @@ main {
   margin-top: 19px;
   height: 165px;
   width: 100%;
-  background-image: url(/img/footer.png);
+  background-image: url(/test_assignment_shop/img/footer.png);
   background-repeat: repeat-x;
   background-size: auto 165px;
   background-position: bottom;
@@ -118,22 +118,22 @@ main {
   z-index: 0;
 }
 .fruit--1 {
-  content: url(./img/fruit-1.png);
+  content: url(/test_assignment_shop/img/fruit-1.png);
 }
 .fruit--2 {
-  content: url(./img/fruit-2.png);
+  content: url(/test_assignment_shop/img/fruit-2.png);
 }
 .fruit--3 {
-  content: url(./img/fruit-3.png);
+  content: url(/test_assignment_shop/img/fruit-3.png);
 }
 .fruit--4 {
-  content: url(./img/fruit-4.png);
+  content: url(/test_assignment_shop/img/fruit-4.png);
 }
 .two-fruit-1 {
-  content: url(./img/two-fruit-1.png);
+  content: url(/test_assignment_shop/img/two-fruit-1.png);
 }
 .two-fruit-2 {
-  content: url(./img/two-fruit-2.png);
+  content: url(/test_assignment_shop/img/two-fruit-2.png);
 }
 #cards .two-fruit-1 {
   top: 273px;
@@ -455,7 +455,7 @@ main {
 }
 .header-logo {
   width: 40px;
-  content: url(./svg/favicon.svg);
+  content: url(/test_assignment_shop/svg/favicon.svg);
   height: auto;
 }
 .header__bottom-info__header-item {
@@ -689,16 +689,16 @@ main {
   font-family: Rubik;
 }
 .benefits--item__icon-premium:before {
-  content: url(./svg/benefits/premium_fruit.svg);
+  content: url(/test_assignment_shop/svg/benefits/premium_fruit.svg);
 }
 .benefits--item__icon-strict:before {
-  content: url(./svg/benefits/strict.svg);
+  content: url(/test_assignment_shop/svg/benefits/strict.svg);
 }
 .benefits--item__icon-best:before {
-  content: url(./svg/benefits/best.svg);
+  content: url(/test_assignment_shop/svg/benefits/best.svg);
 }
 .benefits--item__icon-made:before {
-  content: url(./svg/benefits/made.svg);
+  content: url(/test_assignment_shop/svg/benefits/made.svg);
 }
 #cards {
   display: flex;
@@ -858,7 +858,7 @@ main {
   }
   .header-logo {
     width: 190px;
-    content: url(./svg/logo.svg);
+    content: url(/test_assignment_shop/test_assignment_shop/svg/logo.svg);
     height: auto;
   }
   .header__bottom-info__header-item {

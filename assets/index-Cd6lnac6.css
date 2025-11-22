@@ -108,7 +108,7 @@ main {
   margin-top: 19px;
   height: 165px;
   width: 100%;
-  background-image: url(./img/footer.png);
+  background-image: url(/img/footer.png);
   background-repeat: repeat-x;
   background-size: auto 165px;
   background-position: bottom;

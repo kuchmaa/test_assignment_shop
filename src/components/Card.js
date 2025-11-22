@@ -117,9 +117,15 @@ Card.Body.PriceWrapper = function (price) {
  * @returns {HTMLSpanElement}
  */
 Card.Body.PriceWrapper.Price = function (price) {
-	const dollar = createElement('span', {}, ['card__price--dollar'], '$')();
-	return createElement('span', {})(dollar, price);
+	return createElement('span', {})(
+		Card.Body.PriceWrapper.Price.Dollar(),
+		price
+	);
 };
+Card.Body.PriceWrapper.Price.Dollar = () => {
+	return createElement('span', {}, ['card__price--dollar'], '$')();
+};
+
 /**
  * Кнопки товара
  *
@@ -153,10 +159,28 @@ Card.Footer.Button = function () {
 Card.Events = {
 	/**
 	 *
+	 * @param {HTMLSpanElement} firstPrice
+	 * @param {HTMLSpanElement} lastPrice
+	 */
+	switchPrice: function (firstPrice, lastPrice) {
+		const value = (v) => v.textContent.replace('$', '');
+		lastPrice.style.cursor = 'pointer';
+		lastPrice.addEventListener('click', () => {
+			const f = value(firstPrice);
+			firstPrice.replaceChildren(
+				Card.Body.PriceWrapper.Price.Dollar(),
+				value(lastPrice)
+			);
+
+			lastPrice.replaceChildren(Card.Body.PriceWrapper.Price.Dollar(), f);
+		});
+	},
+	/**
+	 *
 	 * @param {HTMLElement} card
 	 * @param {HTMLElement} animationToElement
 	 */
-	Buy: function (card, animationToElement) {
+	Buy: function (card, animationToElement, callback) {
 		const originalImg = (() => {
 			var el = card.getElementsByTagName('img')[0];
 			return {
@@ -210,6 +234,7 @@ Card.Events = {
 			);
 			setTimeout(() => {
 				Img.style.scale = 0;
+				callback();
 			}, 100);
 		}, 500);
 	},

@@ -858,7 +858,7 @@ main {
   }
   .header-logo {
     width: 190px;
-    content: url(/test_assignment_shop/test_assignment_shop/svg/logo.svg);
+    content: url(/test_assignment_shop/svg/logo.svg);
     height: auto;
   }
   .header__bottom-info__header-item {
